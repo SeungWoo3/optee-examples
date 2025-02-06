@@ -8,7 +8,7 @@ LDADD += -lteec -L$(OPTEE_CLIENT_EXPORT)/lib
 
 SRCS = main.c
 OBJS = $(patsubst %.c,$(O)/%.o,$(SRCS))
-BINARY = debug
+BINARY = multi_ta
 
 .PHONY: all install
 all: $(BINARY) install
